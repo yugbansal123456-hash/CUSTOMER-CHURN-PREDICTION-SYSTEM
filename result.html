@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>📈 Analysis Dashboard</h1>
+
+<div class="container">
+
+<h2>Summary</h2>
+
+<div class="cards">
+<div class="card">Total<br>{{total}}</div>
+<div class="card red">High<br>{{high}}</div>
+<div class="card orange">Medium<br>{{medium}}</div>
+<div class="card green">Low<br>{{low}}</div>
+</div>
+
+<p><b>Average Churn Probability:</b> {{avg_prob}}</p>
+<p><b>Estimated Business Cost:</b> ₹{{cost}}</p>
+
+<h2>Graphs</h2>
+<img src="/static/risk_bar.png" width="300">
+<img src="/static/risk_pie.png" width="300">
+
+<h2>Top Risk Customers</h2>
+<div class="table-box">
+{{top|safe}}
+</div>
+
+<h2>Sample Output</h2>
+<div class="table-box">
+{{preview|safe}}
+</div>
+
+<br>
+<a href="/download"><button>Download Full Results</button></a>
+
+</div>
+
+</body>
+</html>
