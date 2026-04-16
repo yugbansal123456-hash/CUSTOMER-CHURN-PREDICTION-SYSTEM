@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    color: black;
+    margin: 20px auto;
+    width: 75%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    width: 100px;
+    background: #ccc;
+    font-weight: bold;
+}
+
+.red { background: red; color: white; }
+.orange { background: orange; color: white; }
+.green { background: green; color: white; }
+
+.table-box {
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
